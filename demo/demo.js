@@ -186,6 +186,7 @@ function renderAssignmentTable(items, groupByWeek) {
       <thead>
         <tr>
           <th>Title</th>
+          <th>Posted</th>
           <th>Due</th>
           <th>Status</th>
           <th>Points</th>
@@ -200,10 +201,11 @@ function renderAssignmentTable(items, groupByWeek) {
     if (groupByWeek && a.week_label !== lastWeek) {
       lastWeek = a.week_label;
       const label = a.week_label || 'No topic';
-      rows.push(`<tr class="week-separator"><td colspan="6">${esc(label)}</td></tr>`);
+      rows.push(`<tr class="week-separator"><td colspan="7">${esc(label)}</td></tr>`);
     }
 
     const titleCell = `<a href="#" title="Links to Google Classroom in the live app" onclick="return false">${esc(a.title || '(untitled)')}</a>`;
+    const posted = a.posted_date || '—';
     const due = a.due_date || '—';
     const badge = statusBadge(a.status);
     const pts = a.points_possible != null ? a.points_possible : '—';
@@ -215,6 +217,7 @@ function renderAssignmentTable(items, groupByWeek) {
     rows.push(`
       <tr>
         <td class="title-cell">${titleCell}</td>
+        <td class="nowrap">${esc(posted)}</td>
         <td class="nowrap">${esc(due)}</td>
         <td>${badge}</td>
         <td class="muted">${esc(String(pts))}</td>

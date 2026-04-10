@@ -171,6 +171,9 @@ nav {
 .stat-missing .stat-val { color: #991B1B; }
 .stat-todo .stat-val { color: #92400E; }
 .stat-done .stat-val { color: #166534; }
+.stat-zero .stat-val { color: #9CA3AF; }           /* grey = absent signal */
+.stat-card-warn { border-color: #FCA5A5; background: #FFF5F5; }
+.stat-card-warn .stat-card-name { color: #B91C1C; }
 
 /* ── Class groups (collapsible) ── */
 .class-group {

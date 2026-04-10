@@ -278,10 +278,10 @@ function exportCSV() {
 function scrollToClass(className) {
   // Switch to dashboard view first if needed
   if (currentView !== 'dashboard') switchView('dashboard');
-  // Use requestAnimationFrame to wait for render
+  // Use requestAnimationFrame to wait for render, then query details specifically
   requestAnimationFrame(() => {
-    const el = document.querySelector(`[data-class="${CSS.escape(className)}"]`);
-    if (el && el.tagName === 'DETAILS') {
+    const el = document.querySelector(`details[data-class="${CSS.escape(className)}"]`);
+    if (el) {
       el.open = true;
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }

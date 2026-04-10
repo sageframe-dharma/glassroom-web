@@ -362,6 +362,21 @@ nav {
   line-height: 1.55;
 }
 
+.problem-card-highlight {
+  border-color: var(--blue);
+  background: #F0F7FF;
+}
+
+.problem-card-highlight h3 {
+  color: var(--blue-dark);
+}
+
+.problem-demo-link {
+  color: var(--blue-dark);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 /* ── What it does ── */
 
 .features-grid {

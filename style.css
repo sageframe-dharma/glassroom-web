@@ -183,6 +183,18 @@ nav {
   flex-wrap: wrap;
 }
 
+.hero-byline {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.hero-byline a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
+
 /* ── Dashboard mockup ── */
 
 #mockup {

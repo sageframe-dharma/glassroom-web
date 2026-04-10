@@ -61,6 +61,10 @@ function renderStatsRow(data) {
 
     const card = document.createElement('div');
     card.className = cardClass;
+    card.dataset.class = className;
+    card.style.cursor = 'pointer';
+    card.title = 'Jump to this class';
+    card.addEventListener('click', () => scrollToClass(className));
     card.innerHTML = `
       <div class="stat-card-name" title="${esc(className)}">${esc(shortName)}</div>
       <div class="stat-card-numbers">
@@ -112,6 +116,7 @@ function renderDashboard() {
 
     const details = document.createElement('details');
     details.className = 'class-group';
+    details.dataset.class = className;
     details.open = true;
 
     const miniStats = [
@@ -269,6 +274,20 @@ function exportCSV() {
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────
+// ── Scroll to class in dashboard ─────────────────────────────────────────
+function scrollToClass(className) {
+  // Switch to dashboard view first if needed
+  if (currentView !== 'dashboard') switchView('dashboard');
+  // Use requestAnimationFrame to wait for render
+  requestAnimationFrame(() => {
+    const el = document.querySelector(`[data-class="${CSS.escape(className)}"]`);
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
+
 function groupByClass(data) {
   const map = new Map();
   for (const a of data) {

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glassroom — Demo Dashboard</title>
+  <title>Demo — Glassroom</title>
   <meta name="description" content="Live demo of the Glassroom dashboard with sample data showing four real-world class types.">
+  <link rel="icon" type="image/svg+xml" href="../images/glass-48.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,28 +17,31 @@
   <a href="../index.html">Get started with your own data →</a>
 </div>
 
-<!-- Nav -->
+<!-- Nav (matches production dark nav) -->
 <nav>
-  <a href="../index.html" class="nav-brand">Glassroom</a>
-  <div class="nav-links">
-    <button class="nav-link active" id="nav-dashboard">Dashboard</button>
-    <button class="nav-link" id="nav-todo">To Do</button>
-    <a class="nav-link disabled" href="#" onclick="return false" title="Not available in demo">Downloads</a>
-    <a class="nav-link disabled" href="#" onclick="return false" title="Not available in demo">Setup</a>
-  </div>
+  <span class="brand"><img src="../images/glass-48.svg" alt="" class="nav-logo">Glassroom</span>
+  <span class="nav-version">demo</span>
+  <a href="#" class="active" id="nav-dashboard">Dashboard</a>
+  <a href="#" id="nav-todo">To Do</a>
+  <a href="#" class="disabled" onclick="return false" title="Not available in demo">Downloads</a>
+  <a href="#" class="disabled" onclick="return false" title="Not available in demo">Settings</a>
+  <span class="spacer"></span>
+  <a href="https://buymeacoffee.com/sageframe" target="_blank" rel="noopener" class="btn-support" title="Support this project">☕</a>
 </nav>
 
 <!-- Main -->
-<main class="main">
+<main>
 
   <!-- Page header -->
   <div class="page-header">
     <h1 id="page-title">Dashboard</h1>
-    <button class="btn btn-secondary btn-sm" id="btn-export">Export CSV</button>
   </div>
 
   <!-- Per-class stat cards -->
   <div class="stats-row" id="stats-row"></div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar no-print" id="filter-bar"></div>
 
   <!-- Assignment groups -->
   <div id="main-content"></div>

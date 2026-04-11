@@ -188,8 +188,16 @@ nav {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: rgba(255, 255, 255, 0.72);
   max-width: 540px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 1.25rem;
   line-height: 1.55;
+}
+
+#hero .tagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 auto 2rem;
 }
 
 .hero-actions {
@@ -388,6 +396,22 @@ nav {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.55;
+}
+
+.problem-callout {
+  margin-top: 1.75rem;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.problem-callout strong {
+  color: var(--text);
 }
 
 

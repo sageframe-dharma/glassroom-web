@@ -379,10 +379,6 @@ nav {
   max-width: 720px;
 }
 
-.callout-card h2 {
-  margin-bottom: 0.25rem;
-}
-
 .callout-subheading {
   color: var(--text-secondary);
   font-size: 1.1rem;

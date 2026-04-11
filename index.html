@@ -13,13 +13,15 @@
 <!-- ── Navigation ── -->
 <nav>
   <a href="#" class="nav-brand"><img src="images/glass-48.svg" alt="" class="nav-logo">Glassroom</a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
   <div class="nav-links">
     <a href="#problem">The problem</a>
     <a href="#what-it-does">What it does</a>
     <a href="#who">Who it's for</a>
     <a href="#research">Support Research</a>
     <a href="#install">Install</a>
-    <a href="https://github.com/sageframe-no-kaji/glassroom">GitHub</a>
   </div>
 </nav>
 
@@ -265,5 +267,20 @@
   </p>
 </footer>
 
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  const nav = document.querySelector('.nav-links');
+  const open = nav.classList.toggle('open');
+  this.classList.toggle('open', open);
+  this.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('.nav-links a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.remove('open');
+    document.querySelector('.nav-toggle').classList.remove('open');
+    document.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+</script>
 </body>
 </html>

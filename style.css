@@ -463,7 +463,7 @@ nav {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -499,12 +499,13 @@ nav {
 
 .who-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
 .who-card {
-  background: var(--bg-alt);
+  background: #fff;
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
 }
@@ -690,6 +691,11 @@ footer a {
 
   .install-steps {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .features-grid,
+  .who-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -706,6 +706,12 @@ footer a {
   color: var(--text-secondary);
 }
 
+footer .footer-legal {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 /* ── Mobile ── */
 
 @media (max-width: 640px) {

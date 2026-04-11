@@ -347,6 +347,7 @@ nav {
 #problem h2,
 #what-it-does h2,
 #who h2,
+#research h2,
 #install h2,
 #open-source h2 {
   font-size: clamp(1.6rem, 3.5vw, 2.25rem);
@@ -369,6 +370,10 @@ nav {
 /* ── Research callout ── */
 .callout-section {
   padding: 3rem 0;
+}
+
+.callout-section h2 {
+  margin-bottom: 1.5rem;
 }
 
 .callout-card {

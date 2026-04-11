@@ -372,19 +372,22 @@ nav {
   border-top: 1px solid var(--border);
 }
 
-.survey-embed {
-  max-width: 680px;
+.survey-cta {
+  margin-top: 1.5rem;
 }
 
-.survey-embed iframe {
-  display: block;
-  border: none;
+.survey-cta .btn {
+  display: inline-block;
+  background: var(--blue);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.survey-direct {
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+.survey-cta .btn:hover {
+  opacity: 0.9;
 }
 
 .problem-grid {

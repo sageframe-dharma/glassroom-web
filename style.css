@@ -154,6 +154,13 @@ nav {
   text-align: center;
 }
 
+#hero .hero-logo {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 144px;
+  height: 144px;
+}
+
 #hero .eyebrow {
   font-size: 0.8rem;
   font-weight: 600;

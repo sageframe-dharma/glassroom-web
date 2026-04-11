@@ -79,6 +79,15 @@ nav {
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-logo {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .nav-links {
@@ -141,15 +150,8 @@ nav {
 #hero {
   background: var(--bg-dark);
   color: #fff;
-  padding: 3.5rem 0 6rem;
+  padding: 6rem 0 6rem;
   text-align: center;
-}
-
-#hero .hero-logo {
-  display: block;
-  margin: 0 auto 1rem;
-  width: 144px;
-  height: 144px;
 }
 
 #hero .eyebrow {

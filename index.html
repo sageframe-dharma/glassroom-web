@@ -168,9 +168,9 @@
 <!-- ── How to Install ── -->
 <section id="install" class="dark">
   <div class="container">
-    <h2>Up and running in 4 steps.</h2>
+    <h2>Up and running in 3 steps.</h2>
     <p class="section-subhead">
-      You need Docker. That's it. No Python, no terminal experience beyond copy-pasting one command.
+      You need Docker. That's it. No Python, no code, no technical experience beyond copy-pasting two commands.
     </p>
 
     <div class="install-steps">
@@ -181,26 +181,20 @@
       </div>
       <div class="install-step">
         <div class="step-number">02</div>
-        <h3>Download Glassroom</h3>
-        <p>
-          <a href="https://github.com/sageframe-no-kaji/glassroom/archive/refs/heads/main.zip" target="_blank" rel="noopener">Download the ZIP</a> from GitHub and unzip it anywhere on your computer.
-        </p>
+        <h3>Run two commands</h3>
+        <p>Create a folder anywhere, open a terminal in it, and paste these two commands. Docker does the rest.</p>
       </div>
       <div class="install-step">
         <div class="step-number">03</div>
-        <h3>Run one command</h3>
-        <p>Open a terminal in the Glassroom folder and run:</p>
-      </div>
-      <div class="install-step">
-        <div class="step-number">04</div>
         <h3>Open your browser</h3>
         <p>Visit <strong style="color:#fff">localhost:3000</strong> and follow the setup steps. Log in, pick your kid's classes, scrape.</p>
       </div>
     </div>
 
     <div class="terminal-block">
-      <pre><span class="comment"># In the glassroom folder:</span>
-<span class="prompt">$ </span>docker compose up
+      <pre><span class="comment"># Download the config file and start Glassroom:</span>
+<span class="prompt">$ </span>curl -O https://raw.githubusercontent.com/sageframe-no-kaji/glassroom/main/docker-compose.yml
+<span class="prompt">$ </span>docker compose up -d
 
 <span class="comment"># Then open:</span>
 <span class="prompt">$ </span>open http://localhost:3000</pre>

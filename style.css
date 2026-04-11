@@ -243,14 +243,10 @@ nav {
 
 .hero-byline {
   margin-top: 1.25rem;
-  font-size: 0.85rem;
+  font-size: 1.05rem;
+  font-style: italic;
   color: var(--text-secondary);
   text-align: center;
-}
-
-.hero-byline a {
-  color: var(--text-secondary);
-  text-decoration: underline;
 }
 
 /* ── Dashboard mockup ── */
@@ -704,12 +700,6 @@ footer p {
 
 footer p:last-child {
   margin-bottom: 0;
-}
-
-footer .footer-legal {
-  margin-top: 1.25rem;
-  font-size: 0.82rem;
-  color: var(--text-muted);
 }
 
 footer a {

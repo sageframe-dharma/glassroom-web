@@ -5,7 +5,7 @@
       "id": "glassroom-web",
       "name": "glassroom-web",
       "media": [
-        "software"
+        "website"
       ],
       "repo": "git@github-dharma:sageframe-dharma/glassroom-web.git",
       "created": "2026-04-10",

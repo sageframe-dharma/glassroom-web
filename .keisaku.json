@@ -1,0 +1,31 @@
+{
+  "keisaku": 1,
+  "works": [
+    {
+      "id": "glassroom-web",
+      "name": "glassroom-web",
+      "media": [
+        "software"
+      ],
+      "repo": "git@github-dharma:sageframe-dharma/glassroom-web.git",
+      "created": "2026-04-10",
+      "last_updated": "2026-04-11",
+      "_keisaku": {
+        "generated_at": "2026-11-16T10:49:47",
+        "generator_version": "1",
+        "sources": {},
+        "derived_defaults": {
+          "id": "glassroom-web",
+          "name": "glassroom-web",
+          "media": [
+            "software"
+          ],
+          "created": "2026-04-10"
+        },
+        "contract_issues": [
+          "no-contract-source"
+        ]
+      }
+    }
+  ]
+}

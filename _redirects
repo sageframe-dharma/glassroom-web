@@ -1,0 +1,6 @@
+# Publish boundary. Pages serves the repo root, and .assetsignore is a Workers-only
+# file Pages does not read. Pages applies these rules before it looks up an asset,
+# so they shadow the private build record and derived state committed beside the site.
+/.keisaku.json / 301
+/ho-process / 301
+/ho-process/* / 301
